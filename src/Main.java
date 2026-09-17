@@ -171,7 +171,7 @@ public class Main {
                 }
             }
         }
-        else System.out.println(PHONE_NOT_EXIST);
+        System.out.println(PHONE_NOT_EXIST);
     }
     private static void existPhone(ContactBook cBook) {
         Contact[] contacts = cBook.getContacts();
