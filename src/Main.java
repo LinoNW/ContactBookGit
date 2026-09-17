@@ -189,5 +189,6 @@ public class Main {
             System.out.println(SHARED_PHONE);
         else
             System.out.println(DIFFERENT_PHONES);
+
     }
 }
