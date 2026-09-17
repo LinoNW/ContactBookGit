@@ -6,9 +6,11 @@ You will notice some things need to be updated in this code. It was originally m
 
 
 Members:
+Afonso Castro e Neves 
 Lino Nürnberger 71462
-
+Salvador Silva 71419
 
 Tarefas:
-Lino - tarefas pares
+Lino - comando GN
+Afonso e Salvador - comando EP e debbuging
 
