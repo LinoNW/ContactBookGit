@@ -5,12 +5,12 @@ Fork this project to make your own version of it.
 You will notice some things need to be updated in this code. It was originally made with Java 8 and JUnit 4. The plan is for you to still use JUnit 4, but you can and should use a more recent version, like Java 21. You may also note a few other redundant things (e.g. imports). Fix whatever you need to.
 
 
-Members:
-Afonso Castro e Neves 70963
-Lino Nürnberger 71462
-Salvador Silva 71419
+Members:\
+Afonso Castro e Neves 70963\
+Lino Nürnberger 71462\
+Salvador Silva 71419\
 
-Tarefas:
-Lino - comando GN
-Afonso e Salvador - comando EP e debbuging
+Tarefas:\
+Lino - comando GN\
+Afonso e Salvador - comando EP e debbuging\
 
