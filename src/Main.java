@@ -176,19 +176,16 @@ public class Main {
     private static void existPhone(ContactBook cBook) {
         Contact[] contacts = cBook.getContacts();
         int numberOfContacts = cBook.getNumberOfContacts();
-        boolean found = false;
 
-        for (int i = 0; i < numberOfContacts && !found; i++) {
-            for (int j = i + 1; j < numberOfContacts && !found; j++) {
-                if (contacts[i].getPhone() == contacts[j].getPhone())
-                    found = true;
+        for (int i = 0; i < numberOfContacts; i++) {
+            for (int j = i + 1; j < numberOfContacts; j++) {
+                if (contacts[i].getPhone() == contacts[j].getPhone()) {
+                    System.out.println(SHARED_PHONE);
+                    return;
+                }
             }
         }
 
-        if (found)
-            System.out.println(SHARED_PHONE);
-        else
-            System.out.println(DIFFERENT_PHONES);
-
+        System.out.println(DIFFERENT_PHONES);
     }
 }
