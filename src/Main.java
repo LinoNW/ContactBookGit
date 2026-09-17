@@ -15,7 +15,7 @@ public class Main {
     public static final String LIST_CONTACTS  = "LC";
     public static final String QUIT           = "Q";
     public static final String GET_NUMBER     = "GN";
-
+    public static final String EXIST_PHONE = "EP";
     //Constantes que definem as mensagens para o utilizador
     public static final String CONTACT_EXISTS = "contactBook.Contact already exists.";
     public static final String NAME_NOT_EXIST = "contactBook.Contact does not exist.";
@@ -26,6 +26,8 @@ public class Main {
     public static final String QUIT_MSG = "Goodbye!";
     public static final String COMMAND_ERROR = "Unknown command.";
     public static final String PHONE_NOT_EXIST = "Phone number does not exist.";
+    public static final String SHARED_PHONE = "There are contacts that share phone numbers.";
+    public static final String DIFFERENT_PHONES = "All contacts have different phone numbers";
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -57,6 +59,9 @@ public class Main {
                     break;
                 case GET_NUMBER:
                     getNumber(in, cBook);
+                    break;
+                case EXIST_PHONE:
+                    existPhone(cBook);
                     break;
                 default:
                     System.out.println(COMMAND_ERROR);
@@ -167,5 +172,22 @@ public class Main {
             }
         }
         else System.out.println(PHONE_NOT_EXIST);
+    }
+    private static void existPhone(ContactBook cBook) {
+        Contact[] contacts = cBook.getContacts();
+        int numberOfContacts = cBook.getNumberOfContacts();
+        boolean found = false;
+
+        for (int i = 0; i < numberOfContacts && !found; i++) {
+            for (int j = i + 1; j < numberOfContacts && !found; j++) {
+                if (contacts[i].getPhone() == contacts[j].getPhone())
+                    found = true;
+            }
+        }
+
+        if (found)
+            System.out.println(SHARED_PHONE);
+        else
+            System.out.println(DIFFERENT_PHONES);
     }
 }
