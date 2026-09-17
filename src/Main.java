@@ -27,7 +27,7 @@ public class Main {
     public static final String COMMAND_ERROR = "Unknown command.";
     public static final String PHONE_NOT_EXIST = "Phone number does not exist.";
     public static final String SHARED_PHONE = "There are contacts that share phone numbers.";
-    public static final String DIFFERENT_PHONES = "All contacts have different phone numbers";
+    public static final String DIFFERENT_PHONES = "All contacts have different phone numbers.";
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
