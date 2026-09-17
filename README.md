@@ -8,3 +8,7 @@ You will notice some things need to be updated in this code. It was originally m
 Members:
 Lino Nürnberger 71462
 
+
+Tarefas:
+Lino - tarefas pares
+
