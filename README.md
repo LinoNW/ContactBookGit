@@ -8,9 +8,9 @@ You will notice some things need to be updated in this code. It was originally m
 Members:\
 Afonso Castro e Neves 70963\
 Lino Nürnberger 71462\
-Salvador Silva 71419\
+Salvador Silva 71419
 
 Tarefas:\
 Lino - comando GN\
-Afonso e Salvador - comando EP e debbuging\
+Afonso e Salvador - comando EP e debbuging
 
