@@ -1,6 +1,3 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,8 +5,10 @@ import java.io.PrintStream;
 import java.nio.file.Files;
 import java.util.Locale;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
 /**
  * A classe Tests especifica um conjunto de testes implementado recorrendo à ferramenta 
@@ -40,8 +39,9 @@ public class Tests {
     private PrintStream consoleStream;
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
-    @Before
+    @BeforeEach
     public void setup() {
+        outContent.reset();
         consoleStream = System.out;
         System.setOut(new PrintStream(outContent));
     }
