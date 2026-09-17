@@ -10,7 +10,7 @@ Afonso Castro e Neves 70963\
 Lino Nürnberger 71462\
 Salvador Silva 71419
 
-Tarefas:\
+Tasks:\
 Lino - comando GN\
-Afonso e Salvador - comando EP e debbuging
+Afonso e Salvador - comando EP and debbuging
 
